@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">eWalle</string>
+    <string name="titleLogo">eWalle</string>
+    <string name="descWallet">Open An Account For Digital E-Wallet Solutions.Instant Payouts.</string>
+    <string name="joinFree">Join For Free.</string>
+    <string name="signIn">Sign in</string>
+    <string name="createAccount">Create an account</string>
+    <string name="accountOverview">Account Overview</string>
+    <string name="sendMoney">Send Money</string>
+    <string name="moreOptions">More Options</string>
+</resources>
