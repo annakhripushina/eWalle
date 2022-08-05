@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bg_base">#FFFFFFFF</color>
+    <color name="bg_card">#F1F3F6</color>
+    <color name="bg_icon">#3A4276</color>
+    <color name="stroke_color_icon">#FFFFFFFF</color>
+    <color name="bg_icon_more_options">#F5F5F5</color>
+    <color name="bg_icon_close">#3A4276</color>
+    <color name="bg_icon_logout">#1B1D28</color>
+    <color name="border_icon_friend">#333A4276</color>
+    <color name="menu_item_color">#1B1D28</color>
 </resources>

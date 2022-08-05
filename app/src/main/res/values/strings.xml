@@ -8,4 +8,17 @@
     <string name="accountOverview">Account Overview</string>
     <string name="sendMoney">Send Money</string>
     <string name="moreOptions">More Options</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="logout">Logout</string>
+    <string name="version">Version 2.0.1</string>
+    <string name="current_balance">Current balance</string>
+    <string name="services">Services</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="accounts">Accounts</string>
+    <string name="transactions">Transactions</string>
+    <string name="stats">Stats</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
 </resources>

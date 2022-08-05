@@ -1,13 +1,8 @@
 package com.example.ewalle.di.module
 
-import com.example.ewalle.data.repository.AuthRepositoryImpl
-import com.example.ewalle.data.repository.DateTimeRepositoryImpl
-import com.example.ewalle.data.repository.ServiceRepositoryImpl
-import com.example.ewalle.data.repository.TemperatureRepositoryImpl
-import com.example.ewalle.domain.repository.AuthRepository
-import com.example.ewalle.domain.repository.DateTimeRepository
-import com.example.ewalle.domain.repository.ServiceRepository
-import com.example.ewalle.domain.repository.TemperatureRepository
+import android.content.Context
+import com.example.ewalle.data.repository.*
+import com.example.ewalle.domain.repository.*
 import com.example.ewalle.domain.usecase.*
 import dagger.Binds
 import dagger.Module
@@ -45,8 +40,28 @@ interface DomainModule {
 
         @Singleton
         @Provides
-        fun provideGetServicesUseCase(repository: ServiceRepository): GetServicesMainScreenUseCase =
-            GetServicesMainScreenUseCase(repository)
+        fun provideGetServicesUseCase(
+            repository: ServiceRepository,
+            context: Context
+        ): GetServicesMainScreenUseCase =
+            GetServicesMainScreenUseCase(repository, context)
+
+        @Singleton
+        @Provides
+        fun provideGetUserUseCase(repository: UserDataRepository): GetUserUseCase =
+            GetUserUseCase(repository)
+
+        @Singleton
+        @Provides
+        fun provideGetBalanceUseCase(repository: UserDataRepository): GetBalanceUseCase =
+            GetBalanceUseCase(repository)
+
+        @Singleton
+        @Provides
+        fun provideGetFriendsUseCase(repository: UserDataRepository): GetFriendsUseCase =
+            GetFriendsUseCase(repository)
+
+
     }
 
     @Singleton
@@ -64,5 +79,9 @@ interface DomainModule {
     @Singleton
     @Binds
     fun bindServiceRepository(impl: ServiceRepositoryImpl): ServiceRepository
+
+    @Singleton
+    @Binds
+    fun bindUserDataRepository(impl: UserDataRepositoryImpl): UserDataRepository
 
 }

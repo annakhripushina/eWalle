@@ -16,5 +16,6 @@
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:navigationBarColor">?attr/colorOnPrimary</item>
         <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:windowBackground">@color/bg_base</item>
     </style>
 </resources>

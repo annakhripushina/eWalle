@@ -18,9 +18,10 @@ class LoginViewModel @Inject constructor(
 
     fun getTemperature(): String = getTemperatureUseCase.getTemperature()
 
-    fun signInUser() : Boolean = signInUserUseCase.signInUser()
+    fun signInUser(): Boolean = signInUserUseCase.signInUser()
 
-    fun createUser() : Boolean = createUserUseCase.createUser()
+    fun createUser(): Boolean = createUserUseCase.createUser()
 
-    fun joinForFree() : Boolean = joinForFreeUseCase.joinForFree()
+    fun joinForFree(): Boolean = joinForFreeUseCase.joinForFree()
+
 }

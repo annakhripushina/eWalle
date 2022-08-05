@@ -3,7 +3,13 @@
     android:height="120dp"
     android:viewportWidth="100"
     android:viewportHeight="120">
-  <path
-      android:pathData="M12,0L88,0A12,12 0,0 1,100 12L100,108A12,12 0,0 1,88 120L12,120A12,12 0,0 1,0 108L0,12A12,12 0,0 1,12 0z"
-      android:fillColor="#F1F3F6"/>
+    <path
+        android:pathData="M12,0L88,0A12,12 0,0 1,100 12L100,108A12,12 0,0 1,88 120L12,120A12,12 0,0 1,0 108L0,12A12,12 0,0 1,12 0z"
+        android:fillColor="@color/bg_card" />
+    <path
+        android:pathData="M12,1L88,1A11,11 0,0 1,99 12L99,108A11,11 0,0 1,88 119L12,119A11,11 0,0 1,1 108L1,12A11,11 0,0 1,12 1z"
+        android:strokeAlpha="0.03"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:strokeColor="#ffffff" />
 </vector>
